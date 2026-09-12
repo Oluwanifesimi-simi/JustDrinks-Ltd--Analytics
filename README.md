@@ -4,7 +4,22 @@ JustDrinks Ltd is a fictitious major retailer of alcoholic drinks in a fictional
 # JustDrinks Ltd — Retail Analytics Project
 
 **End-to-end data analytics engagement covering vendor intelligence, inventory aging, and executive sales dashboards for a major alcoholic beverages retailer.**
+#
+## Table Of Content
+- [Project Overview](#project-overview)
+- [Business Questions Answered](#business-questions-answered)
+- [Tech Stack](#tech-stack)
+- [Repository Structure](#repository-structure)
+- [Data Sources](#data-sources)
+- [Aggregate Tables Built](#aggregate-tables-built)
+- [Key SQL Design Decisions](#key-sql-design-decisions)
+- [Tableau Dashboards](#tableau-dashboards)
+- [Data Strategy Recommendation (Q4)](#data-strategy-recommendation-q4)
+- [How to Reproduce](#how-to-reproduce)
+- [Author](#author)
 
+
+#
 ---
 
 ## Project Overview
@@ -64,7 +79,7 @@ justdrinks-analytics/
 ├── notebooks/
 │   └── eda_justdrinks.ipynb         ← Python EDA: distributions, aging buckets, seasonality
 │
-├── dashboards/
+├── dashboard/
 │   └── 1.png
 │   
 ├── presentation/
