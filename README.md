@@ -43,14 +43,14 @@ This project was completed as a capstone analytics engagement during an **Embedd
 ## Repository Structure
 
 ```
-justdrinks-analytics2/
+justdrinks-analytics/
 │
 ├── README.md                        ← You are here
 ├── .gitignore
 │
 ├── JustDrinks_project_dataset/
-│   ├── Raw dataset/                         ← Original CSV source files (gitignored — see note)
-│   └── Export data/                     ← Excel exports used as Tableau data sources
+│   ├── Raw_dataset/                         ← Original CSV source files (gitignored — see note)
+│   └── Export_data/                     ← Excel exports used as Tableau data sources
 │       ├── DataPrep1_VendorBillings.xlsx
 │       └── DataPrep2_InventoryAging.csv
 │
@@ -65,15 +65,21 @@ justdrinks-analytics2/
 │   └── eda_justdrinks.ipynb         ← Python EDA: distributions, aging buckets, seasonality
 │
 ├── dashboards/
-│   ├── dashboard_vendor_activity.png
-│   └── dashboard_sales_performance.png 
+│   └── 1.png
 │   
-│
 ├── presentation/
 │   └── JustDrinks_Q4_DataStrategy.pptx
 │
-└── assets/
-    └── schema_diagram.png           ← Table relationship overview
+│
+├── output_diagram/                                 ← output results in PNG
+│    ├── 1.png
+│    ├── 2.png
+│    ├── 3.png
+│    ├── 4.png
+│    ├── 5.png
+│    └── 6.png
+
+              
 ```
 
 > **Note on raw data:** Source CSV files are excluded from this repository via `.gitignore` as they contain full transactional records. The SQL scripts, exports, and notebook are fully self-documenting of the transformations applied.
