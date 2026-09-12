@@ -1,12 +1,15 @@
 # ── Raw data files ───────────────────────────────────────────
 # Source CSVs excluded — full transactional records
-Raw dataset/
+Raw_dataset/
+*.csv
+Export_data/
 *.csv
 
 # SQLite database (large binary — not suitable for version control)
 *.db
 *.sqlite
 *.sqlite3
+*.sql
 
 # ── Python ───────────────────────────────────────────────────
 __pycache__/
