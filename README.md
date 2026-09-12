@@ -136,11 +136,11 @@ Six CSV files ingested into SQLite as the following tables:
 
 ## Key SQL Design Decisions
 
-**Freight pre-aggregation:** `InvoicePurchases` stores freight at the invoice level, not the line-item level. A naive join multiplies freight costs across every product line on the same PO. This was resolved by pre-aggregating freight per `(VendorNumber, PONumber)` as a subquery before joining to `Purchases`.
+- **Freight pre-aggregation:** `InvoicePurchases` stores freight at the invoice level, not the line-item level. A naive join multiplies freight costs across every product line on the same PO. This was resolved by pre-aggregating freight per `(VendorNumber, PONumber)` as a subquery before joining to `Purchases`.
 
-**Sales pre-aggregation:** One purchase row maps to many sales rows (one delivery → multiple sale dates). Sales were pre-aggregated per `InventoryId` before joining to avoid row fan-out in the aging table.
+- **Sales pre-aggregation:** One purchase row maps to many sales rows (one delivery → multiple sale dates). Sales were pre-aggregated per `InventoryId` before joining to avoid row fan-out in the aging table.
 
-**Date handling:** SQLite stores all dates as TEXT. `JULIANDAY()` was used for all date arithmetic (aging, lead times, payment cycles) and `strftime('%m', ...)` for month/season extraction.
+- **Date handling:** SQLite stores all dates as TEXT. `JULIANDAY()` was used for all date arithmetic (aging, lead times, payment cycles) and `strftime('%m', ...)` for month/season extraction.
 
 ---
 
