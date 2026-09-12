@@ -43,12 +43,12 @@ This project was completed as a capstone analytics engagement during an **Embedd
 ## Repository Structure
 
 ```
-justdrinks-analytics/
+justdrinks-analytics2/
 │
 ├── README.md                        ← You are here
 ├── .gitignore
 │
-├── JustDrinks Project Dataset/
+├── JustDrinks_project_dataset/
 │   ├── Raw dataset/                         ← Original CSV source files (gitignored — see note)
 │   └── Export data/                     ← Excel exports used as Tableau data sources
 │       ├── DataPrep1_VendorBillings.xlsx
@@ -58,7 +58,8 @@ justdrinks-analytics/
 │   ├── 01_setup_notes.sql           ← Import instructions and table verification
 │   ├── 02_exploration.sql           ← Exploratory queries run before building tables
 │   ├── 03_dataprep1_vendor.sql      ← Q1: Vendor billings + top 10 tables
-│   └── 04_dataprep2_aging.sql       ← Q2: Inventory aging aggregate table
+|   ├── 04_dataprep2_aging.sql       ← Q2: Inventory aging aggregate table
+│   └── JustDrinks_ltd_business_question.sql       ← All business questions 
 │
 ├── notebooks/
 │   └── eda_justdrinks.ipynb         ← Python EDA: distributions, aging buckets, seasonality
